@@ -12,9 +12,24 @@ def clear(element):
 data = [[3, 4, 5],
         [3, 3, 3],
         [3, 5, 3],
+        [3, 4, 7],
+        [2, 3, 4],
+        [7, 8, 9],
+        [1.1, 1.2, 1.3],
+        [2, 3, 7],
         [0, 0, 0],
+        [-3, 4, 5],
+        [3, -4, 5],
+        [3, 4, -5],
         [-1, -1, -1],
-        ['a', '+', 'c']]
+        ['', 4, 5],
+        [3, '', 5],
+        [3, 4, ''],
+        [42949672991, 42949672951, 42949672951],
+        ['SELECT * FROM TABLE', 'DROP TABLE', 'DROP TABLE'],
+        ['a', '+', 'c'],
+        ["<script>alert('Executing JS')</script>>", "<script>alert('Executing JS')</script>>", "<script>alert('Executing JS')</script>>"],
+        ["<SCRIPT>", "<SCRIPT>", "<SCRIPT>"]]
 
 driver = webdriver.Chrome()
 driver.get('https://playground.learnqa.ru/puzzle/triangle')
@@ -42,4 +57,4 @@ for i in range(len(data)):
     clear(side_b)
     clear(side_c)
 
-sleep(5)
+input()
